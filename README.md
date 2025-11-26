@@ -1,4 +1,4 @@
-# Quantium Analytics Virtual Internship (QVI) – Chips Category Analysis
+# Chips Category Analysis - Data Analytics Project
 
 ## Project Overview
 
@@ -10,7 +10,9 @@ The project is separated into two major components:
 - **Task 2 – Experimentation, Control Store Selection & Uplift Testing**
 
 All work is completed using Python, focusing on data wrangling, customer insights, store-level performance analysis, and actionable business recommendations.
-# Project Structure
+
+---
+## Project Structure
 
 structure/
 │
@@ -29,16 +31,18 @@ structure/
 
 NOTE: This notebook runs end-to-end and includes All necessary library imports. Step-by-step executed cells. The reviewer only needs to open it and run the cells in order. 
 
-# 🧩 Task 1 — Customer Analytics & Sales Drivers
+---
 
-## 🎯 Objective
+## 🧩 Task 1 — Customer Analytics & Sales Drivers
+
+### 🎯 Objective
 
 Identify:
 - Which customer segments spend the most on chips  
 - What drives sales in each segment  
 - What commercial strategy should be recommended to the Category Manager  
 
-## 🧹 Data Preparation
+### 🧹 Data Preparation
 
 Task 1 involved:
 
@@ -52,9 +56,7 @@ Task 1 involved:
 
 These steps ensured the dataset was clean, reliable, and ready for analysis.
 
----
-
-## 📊 Key Metrics Calculated
+### 📊 Key Metrics Calculated
 
 To understand purchasing behavior across customer segments, the following metrics were computed:
 
@@ -69,11 +71,9 @@ To understand purchasing behavior across customer segments, the following metric
 
 All metrics were calculated across **LIFESTAGE × PREMIUM_CUSTOMER** segments.
 
----
+### 🔍 Insights From Task 1
 
-## 🔍 Insights From Task 1
-
-### 1. Mature households drive the majority of chip sales  
+**1. Mature households drive the majority of chip sales**  
 The highest-spending groups were:
 - Older Families  
 - Retirees  
@@ -81,47 +81,40 @@ The highest-spending groups were:
 
 These customers have higher purchasing power and larger basket sizes.
 
----
-
-### 2. Higher revenue is driven by more customers, not higher prices  
+**2. Higher revenue is driven by more customers, not higher prices**  
 - Unit prices were similar across all segments  
 - Segments with the highest sales simply had **more customers**
 
----
-
-### 3. Spend is driven by **basket size**, not by how often customers shop  
+**3. Spend is driven by **basket size**, not by how often customers shop**  
 - Transactions per customer were similar across segments  
 - Older segments bought more **units**, meaning larger baskets
 
----
-
-### 4. Younger households are underdeveloped  
+**4. Younger households are underdeveloped**  
 - New Families and Young Families had lower chip penetration  
 - This represents an opportunity for targeted pack sizes and promotions
 
----
 
-## 🧠 Strategic Recommendation (Task 1)
-
-### **Protect & grow the mature household segments**
+### 🧠 Strategic Recommendation (Task 1)
+ 
+**1. Protect & grow the mature household segments**
 - Focus on range, shelf space, and availability  
 - Run multipack deals and volume-based promotions  
 - Encourage larger baskets rather than price discounts  
 
-### **Develop younger family segments**
+**2. Develop younger family segments**
 - Introduce smaller, kid-friendly packs  
 - Market family value bundles  
 - Offer introductory promotions  
 
-### **Avoid heavy discounting**
+**3. Avoid heavy discounting**
 - Price per unit is uniform across segments  
 - Discounting will not significantly change behavior  
 
 ---
 
-# 🧪 Task 2 — Experimentation & Uplift Testing
+## Task 2 — Experimentation & Uplift Testing
 
-## 🎯 Objective
+### 🎯 Objective
 
 Evaluate the performance of a new **store layout trial** in Stores **77, 86, and 88** by:
 
@@ -130,9 +123,7 @@ Evaluate the performance of a new **store layout trial** in Stores **77, 86, and
 3. Running significance tests  
 4. Providing rollout recommendations  
 
----
-
-## 🏪 Control Store Selection
+### Control Store Selection
 
 Control stores were selected using **similarity of pre-trial monthly trends** in:
 
@@ -150,41 +141,33 @@ The closest matches were:
 
 These stores have similar baseline behavior and form valid comparisons.
 
----
+### 📈 Trial vs Control Store Performance (Summary)
 
-## 📈 Trial vs Control Store Performance (Summary)
-
-### **Store 77 — Positive Impact**
+**Store 77 — Positive Impact**
 - Strong uplift in total sales  
 - Driven by **more purchasing customers**  
 - Statistically significant improvement  
 - Excellent candidate for rollout  
 
----
-
-### **Store 86 — Negative Impact**
+**Store 86 — Negative Impact**
 - Sharp decline in performance compared to control  
 - Fewer customers and fewer transactions  
 - Statistically significant deterioration  
 - Layout should **not** be rolled out to stores like 86  
 
----
-
-### **Store 88 — Mixed / Neutral Impact**
+**Store 88 — Mixed / Neutral Impact**
 - Slight decline in customer counts  
 - Slight increase in transactions per customer  
 - Net effect is small and slightly negative  
 - Layout effect inconclusive for similar stores  
 
----
+### Final Recommendation (Task 2)
 
-# 📌 Final Recommendation (Task 2)
-
-### ✔ Roll out the layout to stores similar to **Store 77**
+1. Roll out the layout to stores similar to **Store 77**
 Reliable and significantly positive uplift.
 
-### ✖ Do **not** roll out to stores like **Store 86**
+2. Do **not** roll out to stores like **Store 86**
 Impact is clearly negative.
 
-### ❔ Use caution for stores similar to **Store 88**
+3. Use caution for stores similar to **Store 88**
 Mixed evidence; layout may need refinement before scaling.
